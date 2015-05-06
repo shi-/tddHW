@@ -39,8 +39,7 @@ public class TddArray {
     
     public String get(String key){
         int x = keys.indexOf(key);
+        if (x == -1) throw new NoSuchKeyException();
         return values.get(x);
     }
-    
-    
 }
