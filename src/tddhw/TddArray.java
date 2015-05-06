@@ -16,8 +16,8 @@ import java.util.List;
 public class TddArray {
 
     private int size;
-    private List<String> keys;
-    private List<String> values;
+    public List<String> keys;
+    public List<String> values;
     
     public TddArray(int x){
         size = x;   

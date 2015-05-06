@@ -24,7 +24,7 @@ public class TddTest {
     private TddArray testArray;
     private String key = "key1";
     private String value = "value1";
-    
+    private String value2 = "value2";
     @Before
     public void setUp() {
         testArray = new TddArray(size);
@@ -45,8 +45,15 @@ public class TddTest {
     
     @Test
     public void putTest(){
-        testArray.put(key,value);
-        
+        testArray.put(key,value);   
+    }
+    
+    @Test
+    public void putTestSameKey(){
+        testArray.put(key,value2);
+        int x = testArray.keys.indexOf(key);
+        String val = testArray.values.get(x);
+        assertEquals(val,value2);
     }
     
     
