@@ -20,7 +20,6 @@ import tddhw.*;
  */
 public class TddTest {
     
-    private static final int size = 10;
     private TddArray testArray;
     private String key = "key1";
     private String key2 = "key2";
@@ -28,7 +27,7 @@ public class TddTest {
     private String value2 = "value2";
     @Before
     public void setUp() {
-        testArray = new TddArray(size);
+        testArray = new TddArray();
     }
     
     @After
@@ -41,7 +40,7 @@ public class TddTest {
    
     @Test
     public void createTest(){
-        TddArray testArray = new TddArray(size);
+        TddArray testArray = new TddArray();
     }
     
     @Test
@@ -116,9 +115,5 @@ public class TddTest {
         testArray.put(key2,value2);
         assertEquals(testArray.size(),2);
     }
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+
 }

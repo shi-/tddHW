@@ -11,16 +11,13 @@ import java.util.List;
 /**
  *
  * @author kasia
- * @param <String>
  */
 public class TddArray {
 
-    private int size;
     public List<String> keys;
     public List<String> values;
     
-    public TddArray(int x){
-        size = x;   
+    public TddArray(){
         keys = new ArrayList<String>();
         values = new ArrayList<String>();
     
@@ -54,6 +51,20 @@ public class TddArray {
     public boolean containsKey(String key){
         return keys.contains(key);
     }
-}
-
     
+    public boolean remove(String key){
+        if (!containsKey(key)){
+            return false;
+        }
+        else{
+            int x = keys.indexOf(key);
+            keys.remove(x);
+            values.remove(x);
+            return true;
+        }
+    }
+    
+    public int size(){
+        return keys.size();
+    }
+}   
