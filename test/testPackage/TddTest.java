@@ -70,9 +70,32 @@ public class TddTest {
         String getvalue = testArray.get(key2);
     }
     
+    @Test
+    public void getOrElseTest(){
+        testArray.put(key,value);
+        String getvalue = testArray.getOrElse(key, "fail");
+        assertEquals(getvalue, value);
+        
+    }
     
+    @Test
+    public void getOrElseTestNoKey(){
+        testArray.put(key,value);
+        String getvalue = testArray.getOrElse(key2, "fail");
+        assertEquals(getValue, "fail");
+        
+    }
     
-   
+    @Test
+    public void containsKeyTestTrue(){
+        testArray.put(key,value);
+        assertTrue(testArray.containsKey(key));
+    }
+    @Test
+    public void containsKeyTestFalse(){
+        testArray.put(key,value);
+        assertFalse(testArray.containsKey(key2));
+    }
 
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
