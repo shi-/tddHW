@@ -5,6 +5,7 @@
  */
 package tddhw;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,13 +16,19 @@ import java.util.List;
 public class TddArray {
 
     private int size;
-    private List<String> key;
-    private List<String> value;
+    private List<String> keys;
+    private List<String> values;
     
     public TddArray(int x){
-        size = x;             
+        size = x;   
+        keys = new ArrayList<String>();
+        values = new ArrayList<String>();
     
 }
+    public void put(String key, String value){
+        keys.add(key);
+        values.add(value);
+    }
 
     
     

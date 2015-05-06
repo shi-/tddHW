@@ -23,7 +23,7 @@ public class TddTest {
     private static final int size = 10;
     private TddArray testArray;
     private String key = "key1";
-    private String value = "value1"
+    private String value = "value1";
     
     @Before
     public void setUp() {
