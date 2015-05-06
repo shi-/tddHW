@@ -82,7 +82,7 @@ public class TddTest {
     public void getOrElseTestNoKey(){
         testArray.put(key,value);
         String getvalue = testArray.getOrElse(key2, "fail");
-        assertEquals(getValue, "fail");
+        assertEquals(getvalue, "fail");
         
     }
     

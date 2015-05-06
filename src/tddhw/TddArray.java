@@ -42,4 +42,18 @@ public class TddArray {
         if (x == -1) throw new NoSuchKeyException();
         return values.get(x);
     }
+    
+    public String getOrElse(String key, String valueIfFail){
+        int x = keys.indexOf(key);
+        if (x == -1)
+            return valueIfFail;
+        else
+            return values.get(x);
+    }
+    
+    public boolean containsKey(String key){
+        return keys.contains(key);
+    }
 }
+
+    
