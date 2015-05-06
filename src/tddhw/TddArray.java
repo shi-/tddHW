@@ -26,8 +26,15 @@ public class TddArray {
     
 }
     public void put(String key, String value){
+        
+        if (keys.contains(key)){
+            int x = keys.indexOf(key);
+            values.set(x, value);
+        }
+        else{
         keys.add(key);
         values.add(value);
+        }
     }
 
     
