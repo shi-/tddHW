@@ -97,6 +97,25 @@ public class TddTest {
         assertFalse(testArray.containsKey(key2));
     }
 
+    @Test
+    public void removeTestTrue(){
+        testArray.put(key, value);
+        assertTrue(testArray.remove(key));
+          
+    }
+    @Test
+    public void removeTestFalse(){
+        testArray.put(key, value);
+        assertFalse(testArray.remove(key2));
+        
+    }
+    
+    @Test
+    public void sizeTest(){
+        testArray.put(key, value);
+        testArray.put(key2,value2);
+        assertEquals(testArray.size(),2);
+    }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
