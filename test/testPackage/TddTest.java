@@ -23,6 +23,7 @@ public class TddTest {
     private static final int size = 10;
     private TddArray testArray;
     private String key = "key1";
+    private String key2 = "key2";
     private String value = "value1";
     private String value2 = "value2";
     @Before
@@ -61,6 +62,12 @@ public class TddTest {
         testArray.put(key,value);
         String getvalue = testArray.get(key);
         assertEquals(getvalue,value);
+    }
+    
+    @Test(expected = NoSuchKeyException.class)
+    public void getTestExc(){
+        testArray.put(key,value);
+        String getvalue = testArray.get(key2);
     }
     
     
