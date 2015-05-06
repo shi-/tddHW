@@ -56,6 +56,14 @@ public class TddTest {
         assertEquals(val,value2);
     }
     
+    @Test
+    public void getTest(){
+        testArray.put(key,value);
+        String getvalue = testArray.get(key);
+        assertEquals(getvalue,value);
+    }
+    
+    
     
    
 
