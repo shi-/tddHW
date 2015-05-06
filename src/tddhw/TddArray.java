@@ -34,9 +34,13 @@ public class TddArray {
         else{
         keys.add(key);
         values.add(value);
-        }
+        }   
     }
-
+    
+    public String get(String key){
+        int x = keys.indexOf(key);
+        return values.get(x);
+    }
     
     
 }
