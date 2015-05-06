@@ -5,16 +5,23 @@
  */
 package tddhw;
 
+import java.util.List;
+
 /**
  *
  * @author kasia
+ * @param <String>
  */
 public class TddArray {
 
-    /**
-     * @param args the command line arguments
-     */
+    private int size;
+    private List<String> key;
+    private List<String> value;
     
+    public TddArray(int x){
+        size = x;             
+    
+}
 
     
     
