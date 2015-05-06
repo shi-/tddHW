@@ -24,7 +24,10 @@ public class TddTest {
     public TddTest() {
     }
    
-    
+    @Test
+    public void createTest(){
+        TDDArray testArray = new TDDArray(10);
+    }
     
     
    

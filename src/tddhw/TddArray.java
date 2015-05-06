@@ -15,10 +15,7 @@ public class TddArray {
      * @param args the command line arguments
      */
     
-@Test
-    public void createTest(){
-        TDDArray testArray = new TDDArray(10);
-    }
+
     
     
 }
