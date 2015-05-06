@@ -19,26 +19,15 @@ import static org.junit.Assert.*;
  */
 public class TddTest {
     
+    private static final int size = 10;
+    
     public TddTest() {
     }
+   
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
     
-    @AfterClass
-    public static void tearDownClass() {
-    }
     
-    @Before
-    public void setUp() {
-        testArray = new TddArray();
-    }
-    
-    @After
-    public void tearDown() {
-        testArray = null;
-    }
+   
 
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
