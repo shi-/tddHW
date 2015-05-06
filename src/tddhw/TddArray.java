@@ -9,7 +9,7 @@ package tddhw;
  *
  * @author kasia
  */
-public class TddHW {
+public class TddArray {
 
     /**
      * @param args the command line arguments
